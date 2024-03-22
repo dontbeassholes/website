@@ -19,11 +19,18 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 
-from snob.views import home_page
+from snob.views import home_page, contact, courses, elements, news, news_post, teachers, index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home_page)
+    path('', home_page),
+    path('contact.html', contact),
+    path('courses.html', courses),
+    path('elements.html', elements),
+    path('news.html', news),
+    path('news_post.html', news_post),
+    path('teachers.html', teachers),
+    path('index.html', index)
 ]
 
 

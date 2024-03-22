@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +7,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Course Project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
-<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="styles/contact_styles.css">
-<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+<link href="{% static 'fontawesome-all.css' %}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{% static 'contact_styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'contact_responsive.css' %}">
 </head>
 <body>
 
@@ -22,7 +23,7 @@
 			<!-- Logo -->
 			<div class="logo_container">
 				<div class="logo">
-					<img src="images/logo.png" alt="">
+					<img src="{% static 'logo.png' %}" alt="">
 					<span>course</span>
 				</div>
 			</div>
@@ -42,7 +43,7 @@
 			</nav>
 		</div>
 		<div class="header_side d-flex flex-row justify-content-center align-items-center">
-			<img src="images/phone-call.svg" alt="">
+			<img src="{% static 'phone-call.svg' %}" alt="">
 			<span>+43 4566 7788 2457</span>
 		</div>
 
@@ -135,19 +136,19 @@
 							<ul>
 								<li class="contact_info_item">
 									<div class="contact_info_icon">
-										<img src="images/placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
+										<img src="{% static 'placeholder.svg' %}" alt="https://www.flaticon.com/authors/lucy-g">
 									</div>
 									Blvd Libertad, 34 m05200 Arévalo
 								</li>
 								<li class="contact_info_item">
 									<div class="contact_info_icon">
-										<img src="images/smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
+										<img src="{% static 'smartphone.svg' %}" alt="https://www.flaticon.com/authors/lucy-g">
 									</div>
 									0034 37483 2445 322
 								</li>
 								<li class="contact_info_item">
 									<div class="contact_info_icon">
-										<img src="images/envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
+										<img src="{% static 'envelope.svg' %}" alt="https://www.flaticon.com/authors/lucy-g">
 									</div>hello@company.com
 								</li>
 							</ul>
@@ -215,7 +216,7 @@
 						<!-- Logo -->
 						<div class="logo_container">
 							<div class="logo">
-								<img src="images/logo.png" alt="">
+								<img src="{% static 'logo.png' %}" alt="">
 								<span>course</span>
 							</div>
 						</div>
@@ -262,19 +263,19 @@
 							<ul>
 								<li class="footer_contact_item">
 									<div class="footer_contact_icon">
-										<img src="images/placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
+										<img src="{% static 'placeholder.svg' %}" alt="https://www.flaticon.com/authors/lucy-g">
 									</div>
 									Blvd Libertad, 34 m05200 Arévalo
 								</li>
 								<li class="footer_contact_item">
 									<div class="footer_contact_icon">
-										<img src="images/smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
+										<img src="{% static 'smartphone.svg' %}" alt="https://www.flaticon.com/authors/lucy-g">
 									</div>
 									0034 37483 2445 322
 								</li>
 								<li class="footer_contact_item">
 									<div class="footer_contact_icon">
-										<img src="images/envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
+										<img src="{% static 'envelope.svg' %}" alt="https://www.flaticon.com/authors/lucy-g">
 									</div>hello@company.com
 								</li>
 							</ul>
