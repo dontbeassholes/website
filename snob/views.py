@@ -1,10 +1,15 @@
 from django.shortcuts import render
 
+from snob.models import CategoryModel
+
+
 # Create your views here.
 
 
 def home_page(request):
-    return render(request, template_name='index.html')
+    categories = CategoryModel.objects.all()
+    context = {'categories': categories}
+    return render(request, template_name='index.html', context=context)
 
 def contact(request):
     return render(request, template_name='contact.html')
